@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'VCR';
+    src: url(../fonts/VCR_OSD_MONO.ttf);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../media/background5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+/* .background-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #000 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 0;
+} */
+
+.stamps-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 1;
+}
+
+.stamp {
+    position: absolute;
+    padding: 10px;
+    color: white;
+    background-color: #1e3a8a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+    font-family: 'VCR';
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stamp.dog-tag {
+    background: #AADB1E;
+    color: white;
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-family: 'VCR';
+    width: 155px;
+    height: 50px;
+    filter: blur(0.85px);
+}
+
+.stamp.rectangular {
+    width: 250px;
+    height: 105px;
+    color: blue;
+    background-color: transparent;
+    border: 5px dashed blue;
+    padding: 8px;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'VCR';
+    filter: grayscale(25%) blur(0.5px) contrast(85%) brightness(95%);
+}
+
+.stamp.solid {
+    width: 150px;
+    height: 75px;
+    border-radius: 80% / 85%;
+    background-color: transparent;
+    border: 4px dotted #FF007F;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-align: center;
+    line-height: 1;
+    color: #FF007F;
+    font-family: 'VCR';
+    filter: blur(0.55px) contrast(85%) brightness(95%);
+}
+
+.input-form {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    z-index: 2;
+}
+
+.input-form input {
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 14px;
+    width: 150px;
+}
+
+.input-form button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-form button:hover {
+    background-color: #AADB1E;
+}
